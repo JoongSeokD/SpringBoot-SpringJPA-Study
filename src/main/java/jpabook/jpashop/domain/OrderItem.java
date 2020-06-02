@@ -25,7 +25,6 @@ public class OrderItem {
     @JoinColumn(name = "order_id")
     private Order order;
 
-    @JsonIgnore
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "item_id")
     private Item item;
